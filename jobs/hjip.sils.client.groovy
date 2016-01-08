@@ -3,7 +3,7 @@ job('hjip.sils.client') {
         git('git@github.com:HennepinCountyPublicDefender/hjip.sils.client.git')
     }
     triggers {
-        scm('*/15 * * * *')
+        scm('H/05 * * * *')
     }
     steps {
         maven('-e clean test deploy')
