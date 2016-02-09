@@ -1,4 +1,4 @@
-job('amdef-file-service-document-client-release') {
+mavenJob('amdef-file-service-document-client-release') {
   scm {
       git('git@github.com:HennepinCountyPublicDefender/amdef-file-service-document-client.git')
   }
