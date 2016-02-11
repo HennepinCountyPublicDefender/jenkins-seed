@@ -6,6 +6,6 @@ job('amdef_file_service_document_client') {
         scm('H/05 * * * *')
     }
     steps {
-        maven('_e clean test deploy')
+        maven('-e clean test deploy')
     }
 }
