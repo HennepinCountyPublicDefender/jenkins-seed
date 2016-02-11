@@ -1,4 +1,4 @@
-job('hjip.sils.client') {
+job('hjip_sils_client') {
     scm {
         git('git@github.com:HennepinCountyPublicDefender/hjip.sils.client.git')
     }

@@ -1,4 +1,4 @@
-job('amdef-file-service-boot') {
+job('amdef_file_service_boot') {
     scm {
         git('git@github.com:HennepinCountyPublicDefender/amdef-file-service-boot.git')
     }

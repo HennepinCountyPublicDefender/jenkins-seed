@@ -1,4 +1,4 @@
-job('amdef-file-service-document-client') {
+job('amdef_file_service_document_client') {
     scm {
         git('git@github.com:HennepinCountyPublicDefender/amdef-file-service-document-client.git')
     }
@@ -6,6 +6,6 @@ job('amdef-file-service-document-client') {
         scm('H/05 * * * *')
     }
     steps {
-        maven('-e clean test deploy')
+        maven('_e clean test deploy')
     }
 }
