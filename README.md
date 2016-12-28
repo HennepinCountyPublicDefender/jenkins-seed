@@ -1,6 +1,7 @@
 # jenkins-seed
 
 
+### Example
 ```
 job('amdef-file-service-document-client') {
     scm {
@@ -14,3 +15,7 @@ job('amdef-file-service-document-client') {
     }
 }
 ```
+
+### Links
+* [jenkins DSL Docs](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.jobs.MavenJob.jdk)
+* [Test site](http://job-dsl.herokuapp.com/)
