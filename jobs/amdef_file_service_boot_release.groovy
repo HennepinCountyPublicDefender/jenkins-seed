@@ -1,18 +1,8 @@
 mavenJob('amdef_file_service_boot_release') {
   jdk('Java 8')
   scm {
-      git {
-            remote {
-                    name('origin')
-                    url('https://github.com/HennepinCountyPublicDefender/amdef-file-service-boot.git')
-                    }
-            branch('master')
-            extensions {
-                    wipeOutWorkspace()
-                    localBranch('master')
-                    }
-            }
-        }
+      git('https://github.com/HennepinCountyPublicDefender/amdef-file-service-boot.git','*/master')
+  }
   wrappers {
       mavenRelease {
           releaseGoals('release:prepare release:perform')
