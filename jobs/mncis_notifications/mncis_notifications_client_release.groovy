@@ -7,7 +7,8 @@ mavenJob('mncis_notifications_client_build_release') {
       mavenRelease {
           releaseGoals('release:prepare release:perform')
           dryRunGoals('-DdryRun=true release:prepare')
-          selectScmCredentials(false)
+          scmUserEnvVar('MY_USER_ENV')
+          scmPasswordEnvVar('MY_PASSWORD_ENV')
           numberOfReleaseBuildsToKeep(5)
       }
   }
